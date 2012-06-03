@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>JQuery Tests</title>
+
+    <!--JQuery-->
+    <script src="js/JQuery/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/JQuery/jquery-ui-1.8.20.custom.min.js" type="text/javascript"></script>
+    <link href="Themes/Start/jquery-ui-1.8.20.custom.css" rel="stylesheet" type="text/css" />
+
+    <!-- JQGrid -->
+    <script src="js/JQGrid/i18n/grid.locale-en.js" type="text/javascript"></script> <!-- Needs to load BEFORE JQGrid js file -->
+    <script src="js/JQGrid/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <link href="css/JQGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom Settings -->
+    <script src="js/Custom/UISettings.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        // a.k.a. "Page_Load"
+        $(document).ready(
+            function () {
+
+                var modalDialogOption = UISettings.JQueryUI.ModalDialogOption;
+                modalDialogOption.title = "Test Dialog Title";
+                modalDialogOption.buttons = [
+                                    {
+                                        text: "Ok"
+                                        , click: function () { $(this).dialog("close"); }
+                                    }
+                                    , {
+                                        style: "margin-left: 5px;"
+                                        , text: "Shuffle"
+                                        , click: function () { $(this).html("Shuffle!"); }
+                                    }
+                                    ];
+
+                $("#divDialog").dialog(modalDialogOption);
+
+
+                $("#buttonShowDialog").click(
+                    function (sender) {
+                        $("#divDialog").dialog("open");
+                    }
+                );
+
+                $("#divAccordion").accordion();
+                $("#divAccordion").accordion("option",
+                                                    {
+                                                        animated: "bounceslide"
+                                                        , collapsible: true
+                                                    }
+                                            );
+
+
+                $("#buttonAccordionActivate").click(
+                    function (sender) {
+                        $("#divAccordion").accordion("activate", 1);
+                    }
+                );
+
+                $("#divSlider").slider({
+                    orientation: "horizontal",
+                    range: "min",
+                    max: 255
+                });
+
+            } // end Page_Load function
+        );
+    </script>
+</head>
+<body>
+    <h4>JQuery Widgets</h4>    
+    <input id="buttonShowDialog" type="button" value="Show Dialog" />
+    <!--Hidden off the page -->
+    <div id="divDialog">
+        This text will go in the dialog
+    </div>
+
+    <hr />
+
+    <h4>Accordion</h4>
+    <div id="divAccordion" style="width:600px;">
+        <h4>Accordion Title 1</h4>
+        <div>
+            Accordion Content 1<br />
+            Accordion Content 1<br />
+            Accordion Content 1<br />
+        </div>
+        <h4>Accordion Title 2</h4>
+        <div>
+            Accordion Content 2<br />
+            Accordion Content 2<br />
+            Accordion Content 2<br />
+        </div>
+        <h4>Accordion Title 3</h4>
+        <div>
+            Accordion Content 3<br />
+            Accordion Content 3<br />
+            Accordion Content 3<br />
+        </div>
+    </div>
+    <input id="buttonAccordionActivate" type="button" value="Accordion Activate" />
+
+<hr />
+<h4>Slider</h4>
+
+    <div id="divSlider" style="width: 200px; height:20px;">
+    </div>
+
+</body>
+</html>

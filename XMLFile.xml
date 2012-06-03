@@ -1,0 +1,21 @@
+﻿<rows>
+  <page>1</page>
+  <total>6</total>
+  <records>2</records>
+  <row id="100">
+    <cell>I100</cell>
+    <cell>2012-01-04T00:00:00</cell>
+    <cell>10.95</cell>
+    <cell>0.50</cell>
+    <cell>11.45</cell>
+    <cell>&lt;![CDATA[My Row Note]]&gt;</cell>
+  </row>
+  <row id="101">
+    <cell>I101</cell>
+    <cell>2012-01-05T00:00:00</cell>
+    <cell>9.95</cell>
+    <cell>0.50</cell>
+    <cell>11.45</cell>
+    <cell>&lt;![CDATA[My Row Note 1]]&gt;</cell>
+  </row>
+</rows>

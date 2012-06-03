@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Sample data that can be passed RIGHT back to the caller in its proto-form-->
+<DataRows>
+  <invoice id='101' InvoiceId='I101' InvoiceDate='1/5/2012' Amount='9.95' Tax='.50' Total='11.45' Notes='My Row Note 1' />
+  <invoice id='102' InvoiceId='I102' InvoiceDate='6/4/2012' Amount='8.95' Tax='.50' Total='11.45' Notes='My Row Note 2' />
+  <invoice id='103' InvoiceId='I103' InvoiceDate='4/4/2012' Amount='4.95' Tax='.50' Total='11.45' Notes='My Row Note 3' />
+  <invoice id='104' InvoiceId='I104' InvoiceDate='9/4/2012' Amount='15.95' Tax='.50' Total='11.45' Notes='My Row Note 4' />
+  <invoice id='105' InvoiceId='I105' InvoiceDate='1/19/2012' Amount='2.95' Tax='.50' Total='11.45' Notes='My Row Note 5' />
+  <invoice id='106' InvoiceId='I106' InvoiceDate='1/14/2012' Amount='20.95' Tax='.50' Total='11.45' Notes='My Row Note 6' />
+  <invoice id='107' InvoiceId='I107' InvoiceDate='1/10/2012' Amount='10.50' Tax='.50' Total='11.45' Notes='My Row Note 7' />
+  <invoice id='108' InvoiceId='I108' InvoiceDate='7/4/2012' Amount='10.45' Tax='.50' Total='11.45' Notes='My Row Note 8' />
+  <invoice id='109' InvoiceId='I109' InvoiceDate='9/4/2012' Amount='10.30' Tax='.50' Total='11.45' Notes='My Row Note 9' />
+  <invoice id='110' InvoiceId='I110' InvoiceDate='1/4/2010' Amount='10.20' Tax='.50' Total='11.45' Notes='My Row Note 10' />
+  <invoice id='111' InvoiceId='I111' InvoiceDate='1/4/2011' Amount='12.95' Tax='.50' Total='11.45' Notes='My Row Note 11' />
+  <invoice id='112' InvoiceId='I112' InvoiceDate='1/4/2000' Amount='10.95' Tax='.50' Total='11.45' Notes='My Row Note 12' />
+  <invoice id='113' InvoiceId='I100' InvoiceDate='1/4/2012' Amount='10.95' Tax='.50' Total='11.45' Notes='My Row Note 13' />
+</DataRows>
+
+
+
+
